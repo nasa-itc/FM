@@ -227,7 +227,9 @@ uint32 FM_GetFilenameState(char *Filename, uint32 BufferSize, boolean FileInfoCm
                 FileIsOpen = FALSE;
                 
 
-                OS_ForEachObject(0, SearchOpenFileData, Filename);
+                // Commented out as part of nos3#118 issue
+                // Results in file always returning closed, but resolves crash
+                //OS_ForEachObject(0, SearchOpenFileData, Filename);
 
                 if(FileIsOpen == TRUE)
                 {
