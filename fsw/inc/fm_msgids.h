@@ -19,22 +19,32 @@
 
 /**
  * @file
- *   Specification for the CFS FM application version label
- *   definitions
+ *   Specification for the CFS FM application software bus
+ *   message identifiers
  */
-
-#ifndef FM_VERSION_H
-#define FM_VERSION_H
+#ifndef FM_MSGIDS_H
+#define FM_MSGIDS_H
 
 /**
- * \defgroup cfsfmversion CFS File Manager Version
- * \ref cfsversions
+ * \defgroup cfsfmcmdmid CFS File Manager Command Message IDs
  * \{
  */
 
-#define FM_MAJOR_VERSION 2  /**< \brief Major version number */
-#define FM_MINOR_VERSION 6  /**< \brief Minor version number */
-#define FM_REVISION      99 /**< \brief Revision number */
+#define FM_CMD_MID     0x188C /** < \brief FM ground commands */
+#define FM_SEND_HK_MID 0x188D /** < \brief FM send housekeeping */
+
+/**\}*/
+
+/**
+ * \defgroup cfsfmtlmmid CFS File Manager Telemetry Message IDs
+ * \{
+ */
+
+#define FM_HK_TLM_MID         0x088A /** < \brief FM housekeeping */
+#define FM_FILE_INFO_TLM_MID  0x088B /** < \brief FM get file info */
+#define FM_DIR_LIST_TLM_MID   0x088C /** < \brief FM get dir list */
+#define FM_OPEN_FILES_TLM_MID 0x088D /** < \brief FM get open files */
+#define FM_FREE_SPACE_TLM_MID 0x088E /** < \brief FM get free space */
 
 /**\}*/
 

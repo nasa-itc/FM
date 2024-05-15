@@ -19,22 +19,18 @@
 
 /**
  * @file
- *   Specification for the CFS FM application version label
- *   definitions
+ *   Specification for the CFS File Manager (FM) Application Performance IDs
  */
-
-#ifndef FM_VERSION_H
-#define FM_VERSION_H
+#ifndef FM_PERFIDS_H
+#define FM_PERFIDS_H
 
 /**
- * \defgroup cfsfmversion CFS File Manager Version
- * \ref cfsversions
+ * \defgroup cfsfmmissioncfg CFS File Manager Mission Configuration
  * \{
  */
 
-#define FM_MAJOR_VERSION 2  /**< \brief Major version number */
-#define FM_MINOR_VERSION 6  /**< \brief Minor version number */
-#define FM_REVISION      99 /**< \brief Revision number */
+#define FM_APPMAIN_PERF_ID    39 /**< \brief Main application performance ID */
+#define FM_CHILD_TASK_PERF_ID 44 /**< \brief Child task performance ID */
 
 /**\}*/
 
